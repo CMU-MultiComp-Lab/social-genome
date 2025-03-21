@@ -63,7 +63,7 @@ if __name__ == "__main__":
     file = {"zip_configuration": zip_file}
 
     data = {"GITHUB_REPOSITORY": GITHUB_REPOSITORY}
-
+    print(url)
     try:
         response = requests.post(url, data=data, headers=headers, files=file)
 
