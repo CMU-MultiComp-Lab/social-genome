@@ -1,5 +1,5 @@
 {
 	"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NDA4ODIzNiwianRpIjoiN2QwOTllZTM4OTgyNGQzMGE4NWZiYjkyOTVkMmQyMDYiLCJ1c2VyX2lkIjo1Mjd9.bpnxYKD_vGFXGu74vdkEoZmoWxyopS70VCTHlXBI8eU",
 	"team_pk": "345",
-	"evalai_host_url": "https://eval.ai"
+	"evalai_host_url": "https://staging.eval.ai"
 }
