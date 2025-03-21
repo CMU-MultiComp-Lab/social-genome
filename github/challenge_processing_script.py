@@ -75,8 +75,10 @@ if __name__ == "__main__":
         else:
             print("\n" + response.json()["Success"])
     except requests.exceptions.HTTPError as err:
-        print(response) 
+        print(response.json()) 
+        print(response.status_code)
         if response.status_code in EVALAI_ERROR_CODES:
+            print("in eval error codes")
             is_token_valid = validate_token(response.json())
             if is_token_valid:
                 error = response.json()["error"]
