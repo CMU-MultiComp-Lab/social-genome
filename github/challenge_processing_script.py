@@ -27,6 +27,7 @@ if not GITHUB_AUTH_TOKEN:
         "Please add your github access token to the repository secrets with the name AUTH_TOKEN"
     )
     sys.exit(1)
+print(GITHUB_AUTH_TOKEN)
 
 HOST_AUTH_TOKEN = None
 CHALLENGE_HOST_TEAM_PK = None
@@ -56,7 +57,8 @@ if __name__ == "__main__":
         )
 
     headers = get_request_header(HOST_AUTH_TOKEN)
-    print(headers)
+    print("header: ",headers)
+    
 
     # Creating the challenge zip file and storing in a dict to send to EvalAI
     create_challenge_zip_file(CHALLENGE_ZIP_FILE_PATH, IGNORE_DIRS, IGNORE_FILES)
