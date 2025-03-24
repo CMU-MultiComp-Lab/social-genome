@@ -27,7 +27,7 @@ if not GITHUB_AUTH_TOKEN:
         "Please add your github access token to the repository secrets with the name AUTH_TOKEN"
     )
     sys.exit(1)
-print(GITHUB_AUTH_TOKEN)
+print("github auth token: ", GITHUB_AUTH_TOKEN)
 
 HOST_AUTH_TOKEN = None
 CHALLENGE_HOST_TEAM_PK = None
@@ -45,6 +45,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Fetching the url
+    VALIDATION_STEP = False 
     if VALIDATION_STEP == "True":
         url = "{}{}".format(
             EVALAI_HOST_URL,
@@ -66,9 +67,9 @@ if __name__ == "__main__":
     file = {"zip_configuration": zip_file}
 
     data = {"GITHUB_REPOSITORY": GITHUB_REPOSITORY}
-    print(GITHUB_REPOSITORY)
+    print("github repo: ", GITHUB_REPOSITORY)
     print(data)
-    print(url)
+    print("url: ", url)
     try:
         response = requests.post(url, data=data, headers=headers, files=file)
 
