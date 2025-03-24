@@ -56,6 +56,7 @@ if __name__ == "__main__":
         )
 
     headers = get_request_header(HOST_AUTH_TOKEN)
+    print(headers)
 
     # Creating the challenge zip file and storing in a dict to send to EvalAI
     create_challenge_zip_file(CHALLENGE_ZIP_FILE_PATH, IGNORE_DIRS, IGNORE_FILES)
@@ -63,6 +64,7 @@ if __name__ == "__main__":
     file = {"zip_configuration": zip_file}
 
     data = {"GITHUB_REPOSITORY": GITHUB_REPOSITORY}
+    print(GITHUB_REPOSITORY)
     print(url)
     try:
         response = requests.post(url, data=data, headers=headers, files=file)
