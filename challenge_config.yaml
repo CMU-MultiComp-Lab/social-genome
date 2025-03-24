@@ -1,6 +1,6 @@
 # If you are not sure what all these fields mean, please refer our documentation here:
 # https://evalai.readthedocs.io/en/latest/configuration.html
-title: Social Genome
+title: Social Genome Challenge
 short_description: Evaluating social reasoning of LLMs
 description: templates/description.html
 evaluation_details: templates/evaluation_details.html
