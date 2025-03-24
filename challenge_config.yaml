@@ -18,10 +18,10 @@ tags:
   - machine-learning
   - data-science
   - computer-vision
-domain:
-  - computer-vision
-  - machine-learning
-  - data-science
+# domain:
+#   - computer-vision
+#   - machine-learning
+#   - data-science
 leaderboard:
   - id: 1
     schema:
