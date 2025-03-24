@@ -45,7 +45,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Fetching the url
-    VALIDATION_STEP = False 
+    # VALIDATION_STEP = False 
     if VALIDATION_STEP == "True":
         url = "{}{}".format(
             EVALAI_HOST_URL,
