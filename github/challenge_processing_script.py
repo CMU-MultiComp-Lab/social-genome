@@ -65,6 +65,7 @@ if __name__ == "__main__":
 
     data = {"GITHUB_REPOSITORY": GITHUB_REPOSITORY}
     print(GITHUB_REPOSITORY)
+    print(data)
     print(url)
     try:
         response = requests.post(url, data=data, headers=headers, files=file)
@@ -77,7 +78,7 @@ if __name__ == "__main__":
         else:
             print("\n" + response.json()["Success"])
     except requests.exceptions.HTTPError as err:
-        # print(response.json()) 
+        print(response.json()) 
         print(response.status_code)
         if response.status_code in EVALAI_ERROR_CODES:
             print("in eval error codes")
