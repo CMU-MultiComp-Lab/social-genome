@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Customized favicon with red and dark grey -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+    <!-- Bottom half circle (dark grey) -->
+    <circle style="fill:#333333;" cx="256" cy="256" r="256"/>
+    <!-- Top half circle (red) -->
+    <path style="fill:#FF0000;" d="M0,256C0,114.616,114.616,0,256,0s256,114.616,256,256"/>
+</svg>
