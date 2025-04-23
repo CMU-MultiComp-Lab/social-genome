@@ -1,6 +1,6 @@
 # Social Genome: Grounded Social Reasoning Abilities of Multimodal Model
 
-Benchmark of performance of large language models on social reasoning video-answering questions. Evaluation server hosted on TBD. 
+Benchmark of performance of large language models on social reasoning video-answering questions. Evaluation server hosted on [EvalAI](https://eval.ai/web/challenges/challenge-page/2483/overview). 
 
 ## Social-IQ 2.0 Dataset 
 ```
@@ -78,4 +78,4 @@ Note that for the "answer" value, you must give a multiple choice answer A, B, C
 
 
 ## Evaluation Criteria 
-Specifics on what metrics we compute on the evaluation server can be found on TBD and our [paper](https://arxiv.org/abs/2502.15109).
+Specifics on what metrics we compute on the evaluation server can be found on [EvalAI](https://eval.ai/web/challenges/challenge-page/2483/overview) and our [paper](https://arxiv.org/abs/2502.15109).
