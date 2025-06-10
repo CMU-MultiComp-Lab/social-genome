@@ -2,21 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Social Genome is a new benchmark to study grounded social reasoning abilities of multimodal models.">
+  <meta name="description" content="Social Genome is a new benchmark to study grounded social reasoning abilities of multimodal models.">
   <meta name="keywords" content="social reasoning, social intelligence, multimodal models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Social Genome: Grounded Social Reasoning Abilities of Multimodal Models</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -25,6 +22,27 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <!-- Custom styles -->
+  <style>
+    /* Centered images used throughout */
+    .centered-resize {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+      height: auto;
+      max-height: 400px; /* tweak if you need them shorter */
+    }
+
+    figure {
+  margin-bottom: 1.75rem;   /* space after each figure */
+}
+
+figure figcaption {
+  margin-top: 0.75rem;      /* space between the image and its caption */
+}
+  </style>
 </head>
 <body>
 
@@ -35,16 +53,10 @@
         <div class="column has-text-centered">
           <h1 class="title is-2 publication-title">Social Genome: Grounded Social Reasoning Abilities of Multimodal Models</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://l-mathur.github.io">Leena Mathur*</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/marian-q-721580169/">Marian Qian*</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://pliang279.github.io">Paul Pu Liang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.lti.cs.cmu.edu/people/faculty/morency-louis-philippe.html">Louis-Philippe Morency</a><sup>1</sup>
-            </span>
+            <span class="author-block"><a href="https://l-mathur.github.io">Leena Mathur*</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://www.linkedin.com/in/marian-q-721580169/">Marian Qian*</a><sup>1</sup>,</span>
+            <span class="author-block"><a href="https://pliang279.github.io">Paul Pu Liang</a><sup>2</sup>,</span>
+            <span class="author-block"><a href="https://www.lti.cs.cmu.edu/people/faculty/morency-louis-philippe.html">Louis-Philippe Morency</a><sup>1</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
@@ -55,18 +67,34 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2502.15109"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
+                <a href="https://arxiv.org/abs/2502.15109" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
+                <a href="https://eval.ai/web/challenges/challenge-page/2483/leaderboard/6161" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-trophy"></i></span>
+                  <span>EvalAI</span>
+                </a>
+                <a href="https://github.com/CMU-MultiComp-Lab/social-genome" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>GitHub</span>
+                </a>
               </span>
-              
             </div>
-
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Abstract</h2>
+        <div class="content has-text-justified">
+          Social reasoning abilities are crucial for AI systems to effectively interpret and respond to multimodal human communication and interaction within social contexts. We introduce Social Genome, the first benchmark for fine-grained, grounded social reasoning abilities of multimodal models. Social Genome contains 272 videos of interactions and 1,486 human-annotated reasoning traces related to inferences about these interactions. These traces contain 5,777 reasoning steps that reference evidence from visual cues, verbal cues, vocal cues, and external knowledge (contextual knowledge external to videos). Social Genome is also the first modeling challenge to study external knowledge in social reasoning. Social Genome computes metrics to holistically evaluate semantic and structural qualities of model-generated social reasoning traces. We demonstrate the utility of Social Genome through experiments with state-of-the-art models, identifying performance gaps and opportunities for future research to improve the grounded social reasoning abilities of multimodal models.
         </div>
       </div>
     </div>
@@ -77,58 +105,79 @@
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
       <img src="./static/images/sgenome.png" alt="Teaser Image" style="max-width:100%; height:auto;">
-      <h2 class="subtitle has-text-centered" style="font-size: 1rem;">
-        Reasoning traces in SOCIAL GENOME contain fine-grained, multimodal social cues and references to external knowledge. Social reasoning traces produced by humans can contain complex reasoning paths (sample visualized above) that reference and build upon multimodal evidence and external knowledge across temporal segments of interactions.
-      </h2>      
+      <figcaption><em>
+        Reasoning traces in SOCIAL GENOME contain fine-grained, multimodal social cues and references to external knowledge. 
+        Social reasoning traces produced by humans can contain complex reasoning paths (sample visualized above) that reference and build upon multimodal evidence and external knowledge across temporal segments of interactions.
+        </em></figcaption>
+      </h2>
     </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          
-          Social reasoning abilities are crucial for AI systems to effectively interpret and respond to multimodal human communication and interaction within social contexts. We introduce Social Genome, the first benchmark for fine-grained, grounded social reasoning abilities of multimodal models. Social Genome contains 272 videos of interactions and 1,486 human-annotated reasoning traces related to inferences about these interactions. These traces contain 5,777 reasoning steps that reference evidence from visual cues, verbal cues, vocal cues, and external knowledge (contextual knowledge external to videos). Social Genome is also the first modeling challenge to study external knowledge in social reasoning. Social Genome computes metrics to holistically evaluate semantic and structural qualities of model-generated social reasoning traces. We demonstrate the utility of Social Genome through experiments with state-of-the-art models, identifying performance gaps and opportunities for future research to improve the grounded social reasoning abilities of multimodal models.
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Leaderboard. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-4">Leaderboard Coming Soon!</h2>
+        <h2 class="title is-4" >Social Genome Overview</h2>
+        <p style="text-align:left;">
+        Humans rely on <em>social reasoning</em> to integrate information over time from multimodal behaviors (e.g., gestures, speech acts). These social behaviors are often <em>fine-grained</em>, <em>interleaved</em>, and <em>context-dependent</em>, requiring external, contextual knowledge to be interpreted accurately. The Social Genome modeling task studies the ability of multimodal language models to ground social reasoning in multimodal cues and external knowledge.
+       
+        <br><br><strong>Modeling task:</strong> Given a video <em>V</em>, a question <em>Q</em> about social interactions in the video, and a set of answer options
+A = {<em>A</em><sub>correct</sub>, <em>A</em><sub>incorrect 1</sub>, <em>A</em><sub>incorrect 2</sub>, <em>A</em><sub>incorrect 3</sub>}, a model performing the Social Genome task must generate a reasoning trace <em>R</em> = {e<sub>1</sub>, e<sub>2</sub>, … , e<sub>n</sub>}, where each evidence step <em>e<sub>i</sub></em>
+contributes to selecting an answer <em>A<sub>a</sub></em> from <em>A</em>. Each step <em>e<sub>i</sub></em> is tagged with two attributes:  
+(1) a modality tag <em>m<sub>i</sub></em> ∈ {visual, verbal, vocal, n/a} indicating the communication modality, and  
+(2) an external-knowledge flag <em>k<sub>i</sub></em> ∈ {yes, no} indicating whether the step references contextual knowledge external to the video.
+Given an input tuple (<em>V</em>, <em>Q</em>, A), the model outputs a tuple (<em>A<sub>a</sub></em>, <em>R</em>).  
+<br><br>
+
+        <p style="text-align:left;"><strong>Metrics:</strong>  
+        Metrics in Social Genome assess both the social-inference accuracy of <em>A<sub>a</sub></em> and the semantic and structural qualities of <em>R</em>. 
+        Collectively, these metrics reveal strengths and weaknesses in model social reasoning and multimodal grounding abilities and the extent to which model traces differ from human reasoning. </p>
+
+        <br><br>
+
+        <!-- Separate centered images with captions
+        <figure class="content has-text-centered">
+          <img class="centered-resize" src="./static/images/social-reasoning.png" alt="Social Reasoning Visualization">
+          <figcaption><em>Figure&nbsp;1. Social reasoning visualization.</em></figcaption>
+        </figure> -->
+
+        <figure class="content has-text-centered">
+          <img class="centered-resize" src="./static/images/metrics.png" alt="Metrics Visualization">
+          <figcaption><em>Overview of metrics introduced by Social Genome, studying social inference accuracy, semantic similarity, structural similarity, and low-level grounding ability of multimodal models when performing social reasoning.</em></figcaption>
+        </figure>
+
+  <br>
+  <p style="text-align:left;"><strong>High-Level Findings:</strong></p>
+  <br>
+  <div class="content" style="text-align:left;">
+    We use Social Genome to study multimodal social reasoning abilities of video understanding models: 2 closed-source models (Gemini-1.5-Flash, GPT-4o) and 5 open-source models (LLaVA-Video, LLaVA-Video-Only, LongVA, Video-ChatGPT, VideoChat2). 
+    <ul>
+      <li>Human social inference ability is substantially higher than that of all models (the highest-performing models were Gemini-1.5-Flash and GPT-4o with accuracies of 74.4% and 71.0%, respectively.</li>
+      <li>Social inference accuracy for models <em>decreased</em> as the number of in-context learning examples increased (for k = 0, 1, 2, 4, 8, 16); in addition, chain-of-thought did not improve model social inference ability.</li>
+      <li>Models struggled to generate reasoning traces with high semantic and structural alignment to human traces.</li>
+      <li>Models referenced fewer pieces of multimodal evidence and external knowledge than humans did in social reasoning traces. </li>
+      <li>[Qualitative Observation] Model social reasoning traces did not reference subtle, fine-grained social cues (e.g., subtle facial movements) as much as humans did.</li>
+      <li>[Qualitative Observation] Model social reasoning traces were "flatter" than the more hierarchical human social reasoning traces, which build upon intermediate observations to make inferences.</li>
+    </ul>
+
+    A leaderboard <a href="https://eval.ai/web/challenges/challenge-page/2483/leaderboard/6161/">here</a> is hosted by EvalAI.
+  </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-    <!--/ Paper video. -->
   </div>
-
 </section>
-
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{mathur2025social,
-      title={Social Genome: Grounded Social Reasoning Abilities of Multimodal Models},
-      author={Mathur, Leena and Qian, Marian and Liang, Paul Pu and Morency, Louis-Philippe},
-      journal={arXiv preprint arXiv:2502.15109},
-      year={2025}
+  title={Social Genome: Grounded Social Reasoning Abilities of Multimodal Models},
+  author={Mathur, Leena and Qian, Marian and Liang, Paul Pu and Morency, Louis-Philippe},n  journal={arXiv preprint arXiv:2502.15109},
+  year={2025}
 }</code></pre>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
@@ -136,13 +185,10 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            We thank <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for the project page template.
+            We thank <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for the project page template.
           </p>
         </div>
       </div>
